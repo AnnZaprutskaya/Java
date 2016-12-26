@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+	
+header{
+	width:95%;
+	background-color:#FFF;
+	height: 80px;
+	border-radius:20px;
+	text-align:center;
+	margin-bottom:50px;
+}
+	
+header ul
+{
+	list-style:none;
+	/*width: 100%;*/
+	float: left;
+	clear:both;
+}
+
+header ul li
+{
+	float: left;
+	margin: 30px;
+	font-size: 24px;
+	
+}
+
+a
+{
+	text-decoration:none;
+	font-weight:normal;
+	color:#000;
+}
+
+
+form
+{
+	text-align: left;
+	margin: 20px 20%;
+}
+
+ul
+{
+	list-style:none;
+}

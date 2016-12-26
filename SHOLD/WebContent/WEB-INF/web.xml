@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">  
+<display-name>SHOLD</display-name>
+  <welcome-file-list>
+    <welcome-file>/login</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>isLoggedIn</filter-name>
+    <filter-class>edu.iba.controlModel.isLoggedIn</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>isLoggedIn</filter-name>
+    <url-pattern>/content/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>hasPrivilege</filter-name>
+    <filter-class>edu.iba.controlModel.hasPrivilege</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>hasPrivilege</filter-name>
+    <url-pattern>/content/*</url-pattern>
+  </filter-mapping>
+</web-app>
